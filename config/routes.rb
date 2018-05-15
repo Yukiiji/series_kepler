@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  resources :views
+  resources :bookmarks
+  resources :episodes
+  resources :seasons
+  resources :series
+  resources :reviews
+  resources :users
   root 'welcome#hello'
   get 'welcome/hello'
 
