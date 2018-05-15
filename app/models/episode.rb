@@ -1,6 +1,6 @@
 class Episode < ApplicationRecord
 
-  belongs_to :seasons
+  belongs_to :season
   has_many :views
   has_many :reviews
 end

@@ -1,5 +1,5 @@
 class AddEpisodesToReviews < ActiveRecord::Migration[5.1]
   def change
-    add_reference :reviews, :episodes, foreign_key: true
+    add_reference :reviews, :episode, foreign_key: true
   end
 end

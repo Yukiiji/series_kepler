@@ -30,6 +30,12 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# Gemfile
+gem 'devise', '~> 4.4'
+
+# pour gérer la traduction des forms :
+gem 'devise-i18n'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

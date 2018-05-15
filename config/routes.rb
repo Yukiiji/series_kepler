@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :views
   resources :bookmarks
   resources :episodes
@@ -6,7 +7,7 @@ Rails.application.routes.draw do
   resources :series
   resources :reviews
   resources :users
-  root 'welcome#hello'
+  root 'series#index'
   get 'welcome/hello'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
