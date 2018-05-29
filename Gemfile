@@ -33,6 +33,13 @@ gem 'jbuilder', '~> 2.5'
 # Gemfile
 gem 'devise', '~> 4.4'
 
+gem 'jquery-rails'
+gem 'bootstrap-sass'
+gem 'font-awesome-sass'
+gem 'dotenv-rails'
+gem 'simple_form'
+gem 'sprockets'
+
 # pour gérer la traduction des forms :
 gem 'devise-i18n'
 

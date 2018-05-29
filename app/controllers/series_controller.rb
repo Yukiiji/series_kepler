@@ -2,6 +2,7 @@ class SeriesController < ApplicationController
 
   def index
     @series = Serie.all
-  end
 
+    @highlights = Serie.limit(2)
+  end
 end
