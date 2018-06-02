@@ -1,0 +1,25 @@
+<div class="container">
+
+  <section>
+    <div class="">
+      <h1><%= @episode.title %></h1>
+      <h2>Episode <%= @episode.number %></h2>
+      <p><%= @episode.synopsis %></p>
+
+    </div>
+    <div class="">
+      <h3>Commentaires</h3>
+      <%= link_to("Ajouter une review", controller: "reviews", action: "new", episode_id:@episode) %>
+      <%- if @reviews != nil
+         @reviews.each do |r| %>
+          <p><strong>r.user.username</strong></p>
+          <p>Rated : <%= r.rating %></p>
+        <%- end
+      end
+    else%><p>Aucun commentaire n'a encore été laissé</p>
+    <%-  %>
+
+    </div>
+  </section>
+
+</div>

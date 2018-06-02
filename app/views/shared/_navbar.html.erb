@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-8">
+    <h1>SERIES KEPLER</h1>
+    <p>Le scientifique du cinéma</p>
+  </div>
+  <div class="col-md-3">
+    <% if user_signed_in? %>
+      <p>Bienvenue <%= current_user.username %></p>
+      <%= link_to "Déconnexion", destroy_user_session_path, method: :delete %>
+      <%= link_to "Editer vos paramètres", edit_user_registration_path %>
+    <% else %>
+    <%= link_to "Connexion", new_user_session_path %>
+    <%= link_to "Inscription", new_user_registration_path %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="container">
+
+  <section>
+    <div class="">
+      <p>Date de diffusion de la saison : <%= @season.air_date %></p>
+    <%- @episode.each do |e| %>
+      <p> <%= @season.number  %>x<%= e.number %> <%= link_to(e.title, controller: "episodes", action: "show", id: e) %></p>
+    <% end %>
+    </div>
+  </section>
+
+</div>

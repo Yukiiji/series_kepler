@@ -1,0 +1,7 @@
+<section>
+  <%- @seasons.each do |s| %>
+  <div class="col-md-12">
+    <h2><%= link_to("Saison #{s.number}", controller: "seasons", action: "show", id: s) %></h1>
+  </div>
+  <% end %>
+</section>
