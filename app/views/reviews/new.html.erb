@@ -1,0 +1,17 @@
+<div class="container">
+  <section>
+    <h1>Laissez une review</h1>
+
+
+
+    <%= simple_form_for([@episode, @review]) do |f| %>
+    <br>
+
+      Note : <%= f.select :rating, options_for_select([1, 2, 3, 4, 5]) %><br><br>
+      Commentaire : <br>
+      <%= f.input :comment, as: :text, rows: 8 ,style: "width: 500px" %> <br>
+      <%= f.button :submit %>
+    <% end %>
+
+  </section>
+</div>
