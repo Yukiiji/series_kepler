@@ -5,13 +5,8 @@ Rails.application.routes.draw do
   resources :episodes do
     resources :reviews
   end
-  resources :seasons do
-    resources :episodes
-  end
-  resources :series do
-    resources :seasons
-  end
-
+  resources :series
+  resources :seasons
   resources :users
   root 'series#index'
   get 'welcome/hello'

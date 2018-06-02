@@ -6,4 +6,6 @@ class SeasonsController < ApplicationController
     @season = Season.find(params[:id])
   end
 
+  private
+
 end
