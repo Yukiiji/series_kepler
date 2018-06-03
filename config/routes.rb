@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :views
   resources :bookmarks
   resources :episodes do
     resources :reviews
+    resources :views
   end
   resources :series
   resources :seasons

@@ -11,6 +11,8 @@ class EpisodesController < ApplicationController
     @reviews.each do |r|
       r.user = User.find(r.user_id)
     end
+
+    @view = View.new
   end
 
 end
