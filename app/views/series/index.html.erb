@@ -1,7 +1,7 @@
 <section>
   <%- @series.each do |s| %>
   <div class="col-md-12">
-    <h2><%= link_to(s.name, controller: "series", action: "show", id: s) %></h2>
+    <h2>H<%= link_to(s.name, controller: "series", action: "show", id: s) %></h2>
     <%= cl_image_tag s.picture, width: 300, height: 200, crop: :fill %>
     <p><%- concat s.air_date %></p>
     <br>
