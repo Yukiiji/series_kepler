@@ -39,6 +39,8 @@ gem 'font-awesome-sass'
 gem 'dotenv-rails'
 gem 'simple_form'
 gem 'sprockets'
+gem 'carrierwave'
+gem 'cloudinary', '~> 1.8', '>= 1.8.3'
 
 # pour gérer la traduction des forms :
 gem 'devise-i18n'

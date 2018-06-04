@@ -1,7 +1,7 @@
-class View < ApplicationRecord
+ class View < ApplicationRecord
 
-  belongs_to :seasons
-  belongs_to :series
-  belongs_to :episodes
-  belongs_to :users
+  belongs_to :season
+  belongs_to :serie
+  belongs_to :episode
+  belongs_to :user
 end
